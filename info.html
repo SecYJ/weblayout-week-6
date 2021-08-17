@@ -38,14 +38,10 @@
 						>
 					</h1>
 					<div class="gap-8 d-flex align-items-center">
-						<a
-							href="#"
-							class="header-link text-dark d-none d-md-block"
+						<a href="#" class="btn-cta text-dark d-none d-md-block"
 							>Sign in</a
 						>
-						<a
-							href="#"
-							class="header-link text-dark d-none d-md-block"
+						<a href="#" class="btn-cta text-dark d-none d-md-block"
 							>Sign up</a
 						>
 						<a href="#" class="header-menu position-relative">
@@ -80,18 +76,16 @@
 		
 <nav
 	class="
-		text-center
-		home-nav
+		nav
 		d-flex
 		justify-content-center
 		border-bottom border-dark
-		mb-15
 		text-nowrap
 	"
 >
 	<a href="#" class="text-dark">音樂</a>
 	<a href="#" class="text-dark">戲劇</a>
-	<a href="#" class="text-dark">設計</a>
+	<a href="./design.html" class="text-dark">設計</a>
 	<a href="#" class="text-dark">藝術</a>
 	<a href="#" class="text-dark">美食</a>
 	<a href="#" class="text-dark">旅遊</a>
@@ -101,7 +95,7 @@
 </nav>
 
 <div class="container">
-	<div class="mt-20 mb-10">
+	<!-- <div class="mt-11 mt-md-20 mb-10">
 		<div class="row mb-2">
 			<div class="col-md-6">
 				<img
@@ -113,33 +107,31 @@
 				<div class="col-md-6 position-relative">
 					<div
 						class="
-							product-details-ticket-box
 							position-absolute
+							top-40
 							start-50
+							translate-middle-x
 							text-center
 						"
 					>
 						<div class="d-flex align-items-center">
-							<a
-								href="#"
-								class="product-details-qty-btn text-black"
-								>-</a
+							<a href="#" class="material-icons text-black"
+								>remove</a
 							>
 							<strong
 								class="
-									product-details-ticket-qty-text
+									product-details-ticket-text
+									mx-10
 									fs-1
 									lh-base
 								"
 								>01</strong
 							>
-							<a
-								href="#"
-								class="product-details-qty-btn text-black"
-								>+</a
+							<a href="#" class="material-icons text-black"
+								>add</a
 							>
 						</div>
-						<p>張</p>
+						<p class="fw-light">張</p>
 					</div>
 				</div>
 				<div
@@ -152,16 +144,17 @@
 				>
 					<div
 						class="
-							product-details-ticket-box
 							position-absolute
+							top-40
 							start-50
+							translate-middle-x
 							d-flex
 							flex-column
 						"
 					>
 						<strong
 							class="
-								product-details-ticket-qty
+								product-details-ticket-text
 								fs-1
 								lh-base
 								d-block
@@ -209,14 +202,14 @@
 
 		<div class="row">
 			<div class="col-md-6">
-				<h3
+				<h2
 					class="
 						fs-5
-						fw-bolder
+						fw-bold
 						lh-base
 						d-flex
 						align-items-center
-						mb-1
+						mb-md-1
 					"
 				>
 					2020 台味設計展
@@ -225,7 +218,7 @@
 						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/exhibition-week6/facebook-24px.svg"
 						alt="facebook icon"
 					/>
-				</h3>
+				</h2>
 				<p>
 					一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
 				</p>
@@ -259,22 +252,129 @@
 				</div>
 			</div>
 		</div>
+	</div> -->
+
+	<div class="mt-11 mt-md-20 mb-10">
+		<div class="row mb-2">
+			<div class="col-md-6">
+				<div>
+					<img
+						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+						class="info-ticket-img w-100"
+						alt="design ticket image"
+					/>
+					<div class="mt-2">
+						<h2
+							class="
+								fs-5
+								lh-base
+								fw-bold
+								d-flex
+								align-items-center
+							"
+						>
+							2020 台味設計展
+							<img
+								src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/exhibition-week6/facebook-24px.svg"
+								alt="facebook icon"
+								class="ms-2"
+							/>
+						</h2>
+						<p class="fw-light">
+							一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 row">
+				<div class="col-md-6 border-black position-relative">
+					<div
+						class="
+							position-absolute
+							top-40
+							start-50
+							translate-middle-x
+						"
+					>
+						<div class="d-flex align-items-center info-highlight">
+							<a href="#" class="material-icons">remove</a>
+							<strong class="mx-10 fs-1 lh-base"> 01</strong>
+							<a href="#" class="material-icons">add</a>
+						</div>
+						<p class="text-center fw-light">张</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div
+						class="
+							info-pricing
+							position-relative
+							border-start border-black
+						"
+					>
+						<div
+							class="
+								position-absolute
+								top-40
+								start-50
+								translate-middle-x
+							"
+						>
+							<strong
+								class="
+									d-block
+									fs-1
+									lh-base
+									text-center
+									info-highlight
+								"
+								>NT$350</strong
+							>
+							<div class="fw-light text-center mb-2">票种</div>
+							<div class="d-flex text-center">
+								<a href="#" class="info-ticket-selection"
+									>學生</a
+								>
+								<a href="#" class="info-ticket-selection"
+									>全票</a
+								>
+								<a href="#" class="info-ticket-selection"
+									>愛心</a
+								>
+							</div>
+						</div>
+						<a href="#" class="btn btn-primary">購買票券</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div class="product-details-banner mb-8"></div>
-
 	<div class="row">
-		<div class="col-md-4">
+		<img
+			src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg"
+			alt="celebration banner"
+			class="
+				info-celebration-banner
+				col-12
+				mb-4 mb-md-8
+				order-1 order-md-0
+			"
+		/>
+		<div class="col-md-4 order-1 order-md-0">
 			<img
 				src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-j5gCOKZdm6I-unsplash.jpg"
 				alt="藝饗宴 image"
-			/>
+				class="info-celebration-img"
+			/>c
 		</div>
 		<div class="col-md-8">
-			<h5 class="fs-5 fw-bold lh-base">藝饗宴</h5>
-			<h6 class="fs-5 lh-base">​Celebration of Style and Art</h6>
-			<p class="fw-light text-dark fw-light">
-				<span class="product-details-desc mb-4 d-block"
+			<h2 class="fs-5 fw-bold lh-base mb-1">藝饗宴</h2>
+			<h3 class="fs-5 lh-base fw-normal mb-3">
+				​Celebration of Style and Art
+			</h3>
+			<p class="fw-light text-dark fw-light mb-5 mb-md-0">
+				<span class="info-desc mb-4 d-block"
 					>匯集美、日、臺等地的藝術家與時尚設計師的作品。以跨界跨域的潮流文化為軸心，結合街頭塗鴉、時尚文化、名牌符號等，藉由各自特殊的表現語彙，傳達對社會當下流行文化的自我反嘲。然而這些深受大眾喜愛的藝術家，也讓「時尚」的概念不再扁平單一，相反的，他們展現了對社會更具魅力的反思，也提出了對於潮文化的自我觀點。</span
 				>
 				<span class="d-block"
@@ -287,51 +387,66 @@
 		</div>
 	</div>
 
-	<div class="recommend my-15">
-		<h3 class="section-title">猜你也喜歡...</h3>
-		<ul
-			class="
-				recommend-list
-				d-flex
-				justify-content-md-end
-				flex-column flex-md-row
-				list-unstyled
-			"
-		>
-			<li>
-				<a href="#" class="mb-1">
-					<img
-						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
-						alt="recommend event image 1"
-						class="recommend-list-item-img"
-					/>
-				</a>
-				<h4 class="fw-bold mb-1 fs-5 lh-base">No.22 線上設計展</h4>
-				<p class="recommend-list-item-price">$350</p>
-			</li>
-			<li>
-				<a href="#" class="mb-1">
-					<img
-						class="recommend-list-item-img"
-						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
-						alt="recommend event image 2"
-					/>
-				</a>
-				<h4 class="fw-bold mb-1 fs-5 lh-base">No.22 線上設計展</h4>
-				<p class="recommend-list-item-price">$350</p>
-			</li>
-			<li>
-				<a href="#" class="mb-1">
-					<img
-						class="recommend-list-item-img"
-						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg"
-						alt="recommend event image 3"
-					/>
-				</a>
-				<h4 class="fw-bold mb-1 fs-5 lh-base">No.22 線上設計展</h4>
-				<p class="recommend-list-item-price">$350</p>
-			</li>
-		</ul>
+	<div class="my-6 my-md-15">
+		<h3 class="mt-5 mb-2 mt-md-15 mb-md-6 fs-2 lh-base fw-bold">
+			猜你也喜歡...
+		</h3>
+		<div class="row justify-content-end">
+			<div class="col-md-11">
+				<div class="swiper-container">
+					<ul class="swiper-wrapper recommend-list list-unstyled">
+						<li class="swiper-slide">
+							<div class="border-0 card">
+								<a href="#">
+									<img
+										src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+										class="recommend-img card-img-top"
+										alt="recommend event image 1"
+									/>
+								</a>
+								<div class="card-body">
+									<h5 class="card-title">No.22 線上設計展</h5>
+									<p class="card-text">$350</p>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="border-0 card">
+								<a href="#">
+									<img
+										src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
+										class="recommend-img card-img-top"
+										alt="recommend event image 2"
+									/>
+								</a>
+								<div class="card-body">
+									<h5 class="card-title">No.22 線上設計展</h5>
+									<p class="card-text">$350</p>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="border-0 card">
+								<a href="#">
+									<img
+										src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg"
+										class="recommend-img card-img-top"
+										alt="recommend event image 3"
+									/>
+								</a>
+								<div class="card-body">
+									<h5 class="card-title">No.22 線上設計展</h5>
+									<p class="card-text">$350</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div
+						class="bottom-0 d-none d-md-block swiper-pagination"
+					></div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -388,30 +503,31 @@
 
 
 		<script>
-			// const swiper = new Swiper(".swiper-container", {
-			// 	loop: true,
-			// 	autoplay: {
-			// 		delay: 2500,
-			// 		disableOnInteraction: false,
-			// 		pauseOnMouseEnter: true,
-			// 	},
-			// 	pagination: {
-			// 		el: ".swiper-pagination",
-			// 		clickable: true,
-			// 	},
-			// 	breakpoints: {
-			// 		576: {
-			// 			slidesPerView: 1,
-			// 		},
-			// 		768: {
-			// 			slidesPerView: 2,
-			// 			spaceBetween: 30,
-			// 		},
-			// 		992: {
-			// 			slidesPerView: 3,
-			// 		},
-			// 	},
-			// });
+			const swiper = new Swiper(".swiper-container", {
+				loop: true,
+				spaceBetween: 30,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+					pauseOnMouseEnter: true,
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				breakpoints: {
+					576: {
+						slidesPerView: 1,
+					},
+					768: {
+						slidesPerView: 2,
+						spaceBetween: 30,
+					},
+					992: {
+						slidesPerView: 3,
+					},
+				},
+			});
 		</script>
 		<script src="./assets/js/vendors.js"></script>
 		<script src="./assets/js/all.js"></script>

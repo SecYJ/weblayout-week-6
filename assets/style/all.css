@@ -27,6 +27,7 @@
   --bs-danger: #dc3545;
   --bs-light: #efefef;
   --bs-dark: #707070;
+  --bs-black: #000;
   --bs-font-sans-serif: Roboto, "Helvetica Neue", system-ui, -apple-system, "Segoe UI", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -4162,6 +4163,47 @@ fieldset:disabled .btn {
   border-color: #707070;
 }
 
+.btn-black {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-black:hover {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-check:focus + .btn-black, .btn-black:focus {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(38, 38, 38, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(38, 38, 38, 0.5);
+}
+
+.btn-check:checked + .btn-black,
+.btn-check:active + .btn-black, .btn-black:active, .btn-black.active,
+.show > .btn-black.dropdown-toggle {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-check:checked + .btn-black:focus,
+.btn-check:active + .btn-black:focus, .btn-black:active:focus, .btn-black.active:focus,
+.show > .btn-black.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(38, 38, 38, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(38, 38, 38, 0.5);
+}
+
+.btn-black:disabled, .btn-black.disabled {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
 .btn-outline-primary {
   color: #E31277;
   border-color: #E31277;
@@ -4431,6 +4473,40 @@ fieldset:disabled .btn {
 
 .btn-outline-dark:disabled, .btn-outline-dark.disabled {
   color: #707070;
+  background-color: transparent;
+}
+
+.btn-outline-black {
+  color: #000;
+  border-color: #000;
+}
+
+.btn-outline-black:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-check:focus + .btn-outline-black, .btn-outline-black:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-check:checked + .btn-outline-black,
+.btn-check:active + .btn-outline-black, .btn-outline-black:active, .btn-outline-black.active, .btn-outline-black.dropdown-toggle.show {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-check:checked + .btn-outline-black:focus,
+.btn-check:active + .btn-outline-black:focus, .btn-outline-black:active:focus, .btn-outline-black.active:focus, .btn-outline-black.dropdown-toggle.show:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-outline-black:disabled, .btn-outline-black.disabled {
+  color: #000;
   background-color: transparent;
 }
 
@@ -6097,6 +6173,16 @@ fieldset:disabled .btn {
   color: #363636;
 }
 
+.alert-black {
+  color: black;
+  background-color: #cccccc;
+  border-color: #b3b3b3;
+}
+
+.alert-black .alert-link {
+  color: black;
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -6558,6 +6644,22 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #434343;
   border-color: #434343;
+}
+
+.list-group-item-black {
+  color: black;
+  background-color: #cccccc;
+}
+
+.list-group-item-black.list-group-item-action:hover, .list-group-item-black.list-group-item-action:focus {
+  color: black;
+  background-color: #b8b8b8;
+}
+
+.list-group-item-black.list-group-item-action.active {
+  color: #fff;
+  background-color: black;
+  border-color: black;
 }
 
 .btn-close {
@@ -7775,6 +7877,14 @@ fieldset:disabled .btn {
   color: #5a5a5a;
 }
 
+.link-black {
+  color: #000;
+}
+
+.link-black:hover, .link-black:focus {
+  color: black;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -8057,6 +8167,10 @@ fieldset:disabled .btn {
   top: 100% !important;
 }
 
+.top-40 {
+  top: 40% !important;
+}
+
 .bottom-0 {
   bottom: 0 !important;
 }
@@ -8181,6 +8295,10 @@ fieldset:disabled .btn {
 
 .border-dark {
   border-color: #707070 !important;
+}
+
+.border-black {
+  border-color: #000 !important;
 }
 
 .border-white {
@@ -9856,6 +9974,10 @@ fieldset:disabled .btn {
   color: #707070 !important;
 }
 
+.text-black {
+  color: #000 !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -9910,6 +10032,10 @@ fieldset:disabled .btn {
 
 .bg-dark {
   background-color: #707070 !important;
+}
+
+.bg-black {
+  background-color: #000 !important;
 }
 
 .bg-body {
@@ -10056,6 +10182,18 @@ fieldset:disabled .btn {
   }
   .d-sm-none {
     display: none !important;
+  }
+  .top-sm-0 {
+    top: 0 !important;
+  }
+  .top-sm-50 {
+    top: 50% !important;
+  }
+  .top-sm-100 {
+    top: 100% !important;
+  }
+  .top-sm-40 {
+    top: 40% !important;
   }
   .h-sm-25 {
     height: 25% !important;
@@ -11281,6 +11419,18 @@ fieldset:disabled .btn {
   .d-md-none {
     display: none !important;
   }
+  .top-md-0 {
+    top: 0 !important;
+  }
+  .top-md-50 {
+    top: 50% !important;
+  }
+  .top-md-100 {
+    top: 100% !important;
+  }
+  .top-md-40 {
+    top: 40% !important;
+  }
   .h-md-25 {
     height: 25% !important;
   }
@@ -12504,6 +12654,18 @@ fieldset:disabled .btn {
   }
   .d-lg-none {
     display: none !important;
+  }
+  .top-lg-0 {
+    top: 0 !important;
+  }
+  .top-lg-50 {
+    top: 50% !important;
+  }
+  .top-lg-100 {
+    top: 100% !important;
+  }
+  .top-lg-40 {
+    top: 40% !important;
   }
   .h-lg-25 {
     height: 25% !important;
@@ -13729,6 +13891,18 @@ fieldset:disabled .btn {
   .d-xl-none {
     display: none !important;
   }
+  .top-xl-0 {
+    top: 0 !important;
+  }
+  .top-xl-50 {
+    top: 50% !important;
+  }
+  .top-xl-100 {
+    top: 100% !important;
+  }
+  .top-xl-40 {
+    top: 40% !important;
+  }
   .h-xl-25 {
     height: 25% !important;
   }
@@ -14952,6 +15126,18 @@ fieldset:disabled .btn {
   }
   .d-xxl-none {
     display: none !important;
+  }
+  .top-xxl-0 {
+    top: 0 !important;
+  }
+  .top-xxl-50 {
+    top: 50% !important;
+  }
+  .top-xxl-100 {
+    top: 100% !important;
+  }
+  .top-xxl-40 {
+    top: 40% !important;
   }
   .h-xxl-25 {
     height: 25% !important;
@@ -16285,7 +16471,16 @@ img {
   }
 }
 
-.recommend-list li img {
+.banner-celebration {
+  height: 400px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg);
+}
+
+.btn-cta {
+  line-height: 21px;
+}
+
+.recommend-img {
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -16336,6 +16531,30 @@ img {
   }
 }
 
+.nav {
+  gap: 18px;
+  padding: 18px 0;
+  overflow-x: auto;
+}
+
+.nav > * {
+  position: relative;
+}
+
+.nav > *::after {
+  content: "";
+  position: absolute;
+  display: none;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #E31277;
+}
+
+.nav > *:hover::after {
+  display: block;
+}
+
 @media (max-width: 768px) {
   .header {
     padding-top: 21px;
@@ -16352,34 +16571,6 @@ img {
   height: 18px;
   font-size: 12px;
   line-height: 14px;
-}
-
-.header-link {
-  line-height: 21px;
-}
-
-.index-nav {
-  gap: 18px;
-  padding: 18px 0;
-  overflow-x: auto;
-}
-
-.index-nav > * {
-  position: relative;
-}
-
-.index-nav > *::after {
-  content: "";
-  position: absolute;
-  display: none;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #E31277;
-}
-
-.index-nav > *:hover::after {
-  display: block;
 }
 
 .index-popular-btn {
@@ -16401,14 +16592,6 @@ img {
   margin-right: 10px;
 }
 
-.product-design-list-item {
-  height: 417px;
-}
-
-.product-design-list-item-paragraph {
-  font-weight: 500;
-}
-
 .product-details-wrapper {
   height: 256px;
 }
@@ -16417,24 +16600,8 @@ img {
   height: 256px;
 }
 
-.product-details-ticket-box {
-  top: 40%;
-  -webkit-transform: translate(-50%);
-      -ms-transform: translate(-50%);
-          transform: translate(-50%);
-}
-
-.product-details-ticket-qty {
+.product-details-ticket-text {
   margin-bottom: 23px;
-}
-
-.product-details-ticket-qty-btn {
-  width: 24px;
-  height: 24px;
-}
-
-.product-details-ticket-qty-text {
-  margin: 0 39.5px;
 }
 
 .product-details-ticket-selection {
@@ -16457,14 +16624,52 @@ img {
   padding: 10px 96px;
 }
 
-.product-details-banner {
-  height: 400px;
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg);
-  background-size: cover;
+.info-desc {
+  text-indent: 25px;
 }
 
-.product-details-desc {
-  text-indent: 25px;
+.info-ticket-img {
+  height: 256px;
+}
+
+.info-ticket-selection {
+  width: 65px;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border 0.1s;
+  -o-transition: border 0.1s;
+  transition: border 0.1s;
+}
+
+.info-ticket-selection:hover {
+  border-color: #E31277;
+}
+
+.info-pricing {
+  height: 256px;
+}
+
+.info-highlight {
+  margin-bottom: 23px;
+}
+
+.info-celebration-img {
+  height: 559px;
+}
+
+.info-celebration-banner {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.design-title {
+  font-size: 36px;
+}
+
+@media (max-width: 576px) {
+  .design-title {
+    font-size: 28px;
+  }
 }
 
 .checkout-product-img {
