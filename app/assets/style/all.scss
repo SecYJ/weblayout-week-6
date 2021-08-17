@@ -13,8 +13,12 @@
 @import "./global/typography";
 @import "./components";
 
+// components
+@import "./components/navbar";
+
 @import "./global/layout";
 
 @import "./index";
-@import "./pages/product";
+@import "./pages/info";
+@import "./pages/design";
 @import "./checkout/checkout";

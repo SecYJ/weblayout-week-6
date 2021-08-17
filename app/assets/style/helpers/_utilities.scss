@@ -43,5 +43,19 @@ $utilities: map-merge(
 					responsive: true,
 				)
 			),
+		"top":
+			map-merge(
+				map-get($utilities, "top"),
+				(
+					responsive: true,
+					values:
+						map-merge(
+							map-get(map-get($utilities, "top"), "values"),
+							(
+								40: 40%,
+							)
+						),
+				)
+			),
 	)
 );

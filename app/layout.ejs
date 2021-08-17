@@ -38,14 +38,10 @@
 						>
 					</h1>
 					<div class="gap-8 d-flex align-items-center">
-						<a
-							href="#"
-							class="header-link text-dark d-none d-md-block"
+						<a href="#" class="btn-cta text-dark d-none d-md-block"
 							>Sign in</a
 						>
-						<a
-							href="#"
-							class="header-link text-dark d-none d-md-block"
+						<a href="#" class="btn-cta text-dark d-none d-md-block"
 							>Sign up</a
 						>
 						<a href="#" class="header-menu position-relative">
@@ -80,30 +76,31 @@
 		<%- contents %>
 
 		<script>
-			// const swiper = new Swiper(".swiper-container", {
-			// 	loop: true,
-			// 	autoplay: {
-			// 		delay: 2500,
-			// 		disableOnInteraction: false,
-			// 		pauseOnMouseEnter: true,
-			// 	},
-			// 	pagination: {
-			// 		el: ".swiper-pagination",
-			// 		clickable: true,
-			// 	},
-			// 	breakpoints: {
-			// 		576: {
-			// 			slidesPerView: 1,
-			// 		},
-			// 		768: {
-			// 			slidesPerView: 2,
-			// 			spaceBetween: 30,
-			// 		},
-			// 		992: {
-			// 			slidesPerView: 3,
-			// 		},
-			// 	},
-			// });
+			const swiper = new Swiper(".swiper-container", {
+				loop: true,
+				spaceBetween: 30,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+					pauseOnMouseEnter: true,
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				breakpoints: {
+					576: {
+						slidesPerView: 1,
+					},
+					768: {
+						slidesPerView: 2,
+						spaceBetween: 30,
+					},
+					992: {
+						slidesPerView: 3,
+					},
+				},
+			});
 		</script>
 		<script src="./assets/js/vendors.js"></script>
 		<script src="./assets/js/all.js"></script>

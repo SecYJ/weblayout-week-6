@@ -1,26 +1,12 @@
 .recommend {
-	&-list {
-		li:last-child .recommend-img {
-			// width: 255px;
-		}
-
-		li {
-			img {
-				height: 350px;
-		object-fit: cover;
-			}
-		}
-	}
-
 	&-img {
-		// width: 350px;
-		
+		height: 350px;
+		object-fit: cover;
 	}
 }
 
 .footer {
 	&-banner {
-
 		&-btn {
 			padding: 12px 51px;
 		}
