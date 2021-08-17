@@ -1,0 +1,69 @@
+.product {
+	&-design {
+		&-list-item {
+			height: 417px;
+
+			&-paragraph {
+				font-weight: 500;
+			}
+		}
+	}
+
+	&-details {
+		&-wrapper {
+			height: 256px;
+		}
+
+		&-img {
+			height: 256px;
+		}
+
+		&-ticket {
+			&-box {
+				top: 40%;
+				transform: translate(-50%);
+			}
+
+			&-qty {
+				margin-bottom: 23px;
+
+				&-btn {
+					width: 24px;
+					height: 24px;
+				}
+
+				&-text {
+					margin: 0 39.5px;
+				}
+			}
+
+			&-selection {
+				width: 65px;
+				transition: border 0.15s;
+				border-bottom: 1px solid transparent;
+
+				&:hover {
+					border-bottom-color: $primary;
+				}
+
+				&-active {
+					border-bottom-color: $primary;
+				}
+			}
+
+			&-btn {
+				padding: 10px 96px;
+			}
+		}
+
+		&-banner {
+			height: 400px;
+			background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg);
+			background-size: cover;
+		}
+
+		&-desc {
+			text-indent: 25px;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+.banner {
+	background-size: cover;
+	background-position: center center;
+
+	&-replay {
+		background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people2.png);
+
+		&-btn {
+			padding: 10px 38px;
+		}
+	}
+
+	&-subscribe {
+		height: 400px;
+		background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
+	}
+
+	&-art {
+		height: 480px;
+		background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
+
+		&-content {
+			margin-left: 95px;
+
+			@include mobile() {
+				margin-left: 0;
+			}
+		}
+
+		&-btn {
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+			@include mobile() {
+				padding-left: 51px;
+				padding-right: 51px;
+			}
+		}
+	}
+}

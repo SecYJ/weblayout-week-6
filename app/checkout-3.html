@@ -1,0 +1,178 @@
+---
+title: Checkout Step 3
+layout: ./app/layout.ejs
+engine: ejs
+current: Checkout Step 3
+---
+
+<div class="container">
+	<!-- checkout steps -->
+	<div class="row mt-6">
+		<div class="col-md-8">
+			<ul
+				class="
+					payment-steps
+					row
+					text-center
+					border-top border-2 border-primary
+					list-unstyled
+				"
+			>
+				<li class="payment-step col-md-3 pt-2 active position-relative">
+					確認訂單
+				</li>
+				<li class="payment-step col-md-3 pt-2 active position-relative">
+					填寫訂購資訊
+				</li>
+				<li class="payment-step col-md-3 pt-2 active position-relative">
+					填寫付款資訊
+				</li>
+				<li class="payment-step col-md-3 pt-2 position-relative">
+					完成訂購
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+
+	<!-- cart products -->
+	<div class="row mt-7">
+		<ul class="col-md-8 list-unstyled">
+			<li class="row mb-5">
+				<img
+					src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+					class="checkout-product-img col-md-4"
+					alt="product image 1"
+				/>
+				<div class="col row align-items-center">
+					<div class="col-md-4">
+						<h5 class="fs-6 fw-bold lh-base mb-1">
+							2020 台味設計展
+						</h5>
+						<p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+						<p class="text-dark">全票</p>
+					</div>
+					<p class="col-md-2 fs-5 fw-bold">NT1350</p>
+					<span class="col-md-2 fs-5 fw-bold mx-3">1</span>
+				</div>
+			</li>
+			<li class="row mb-5">
+				<img
+					src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
+					class="checkout-product-img col-md-4"
+					alt="product image 2"
+				/>
+				<div class="col row align-items-center">
+					<div class="col-md-4">
+						<h5 class="fs-6 fw-bold lh-base mb-1">
+							No.22 線上設計展
+						</h5>
+						<p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+						<p class="text-dark">全票</p>
+					</div>
+					<p class="col-md-2 fs-5 fw-bold">NT1350</p>
+					<span class="col-md-2 fs-5 fw-bold mx-3">1</span>
+				</div>
+			</li>
+			<li class="row mb-5">
+				<img
+					src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg"
+					class="checkout-product-img col-md-4"
+					alt="product image 3"
+				/>
+				<div class="col row align-items-center">
+					<div class="col-md-4">
+						<h5 class="fs-6 fw-bold lh-base mb-1">高雄設計節</h5>
+						<p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+						<p class="text-dark">全票</p>
+					</div>
+					<p class="col-md-2 fs-5 fw-bold">NT1350</p>
+					<span class="col-md-2 fs-5 fw-bold mx-3">1</span>
+				</div>
+			</li>
+		</ul>
+
+		<div class="col-md-4">
+			<h3 class="fs-5 fw-medium lh-base mb-5">付款資訊</h3>
+
+			<!-- form -->
+			<form class="checkout-3-form">
+				<div class="mb-5">
+					<label for="credit-card" class="d-block mb-1"
+						>信用卡帳號</label
+					>
+					<input
+						class="checkout-form-input w-100"
+						type="text"
+						id="credit-card"
+						placeholder="Xxxx-xxxx-xxxx-xxxx"
+					/>
+				</div>
+				<div class="mb-5">
+					<label for="valid-date" class="d-block mb-1"
+						>有效日期</label
+					>
+					<input
+						type="date"
+						class="checkout-form-input w-100"
+						id="valid-date"
+						placeholder="(MM/YY)"
+					/>
+				</div>
+				<div class="mb-5">
+					<label for="security-code" class="d-block mb-1"
+						>安全碼</label
+					>
+					<input
+						class="checkout-form-input w-100"
+						type="text"
+						id="security-code"
+						placeholder="***"
+					/>
+				</div>
+			</form>
+
+			<div class="checkout-price-wrapper">
+				<div
+					class="
+						checkout-price-details
+						d-flex
+						justify-content-between
+					"
+				>
+					<div class="fw-medium">小計</div>
+					<div class="fw-light">NT1050</div>
+				</div>
+				<div
+					class="
+						checkout-price-details
+						d-flex
+						justify-content-between
+					"
+				>
+					<div class="fw-medium">折扣</div>
+					<div class="fw-light">-NT50</div>
+				</div>
+				<div
+					class="
+						checkout-price-details
+						d-flex
+						justify-content-between
+					"
+				>
+					<div class="fw-medium fs-5">總金額</div>
+					<div class="fw-medium fs-5">NT1000</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="d-flex justify-content-between">
+		<a href="./checkout-1.html" class="btn btn-outline-secondary btn-lg"
+			>返回</a
+		>
+		<a href="./checkout-4.html" class="checkout-next-btn btn btn-primary"
+			>下一步</a
+		>
+	</div>
+</div>

@@ -1,0 +1,314 @@
+---
+title: Product Details
+layout: ./app/layout.ejs
+engine: ejs
+current: Product Details
+---
+
+<nav
+	class="
+		text-center
+		home-nav
+		d-flex
+		justify-content-center
+		border-bottom border-dark
+		mb-15
+		text-nowrap
+	"
+>
+	<a href="#" class="text-dark">音樂</a>
+	<a href="#" class="text-dark">戲劇</a>
+	<a href="#" class="text-dark">設計</a>
+	<a href="#" class="text-dark">藝術</a>
+	<a href="#" class="text-dark">美食</a>
+	<a href="#" class="text-dark">旅遊</a>
+	<a href="#" class="text-dark">電影</a>
+	<a href="#" class="text-dark">親子</a>
+	<a href="#" class="text-dark">期間限定</a>
+</nav>
+
+<div class="container">
+	<div class="mt-20 mb-10">
+		<div class="row mb-2">
+			<div class="col-md-6">
+				<img
+					src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+					alt="2020 台味設計展"
+				/>
+			</div>
+			<div class="col-md-6 row">
+				<div class="col-md-6 position-relative">
+					<div
+						class="
+							product-details-ticket-box
+							position-absolute
+							start-50
+							text-center
+						"
+					>
+						<div class="d-flex align-items-center">
+							<a
+								href="#"
+								class="product-details-qty-btn text-black"
+								>-</a
+							>
+							<strong
+								class="
+									product-details-ticket-qty-text
+									fs-1
+									lh-base
+								"
+								>01</strong
+							>
+							<a
+								href="#"
+								class="product-details-qty-btn text-black"
+								>+</a
+							>
+						</div>
+						<p>張</p>
+					</div>
+				</div>
+				<div
+					class="
+						border-start border-dark
+						text-center
+						col-md-6
+						position-relative
+					"
+				>
+					<div
+						class="
+							product-details-ticket-box
+							position-absolute
+							start-50
+							d-flex
+							flex-column
+						"
+					>
+						<strong
+							class="
+								product-details-ticket-qty
+								fs-1
+								lh-base
+								d-block
+							"
+							>NT1350</strong
+						>
+						<p class="mb-2 fw-light">票種</p>
+						<ul class="list-unstyled d-flex">
+							<li>
+								<a
+									href="#"
+									class="
+										text-black
+										product-details-ticket-selection
+									"
+									>學生</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="
+										text-black
+										product-details-ticket-selection
+										product-details-ticket-selection-active
+									"
+									>全票</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="
+										text-black
+										product-details-ticket-selection
+									"
+									>愛心</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<h3
+					class="
+						fs-5
+						fw-bolder
+						lh-base
+						d-flex
+						align-items-center
+						mb-1
+					"
+				>
+					2020 台味設計展
+					<img
+						class="ms-1"
+						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/exhibition-week6/facebook-24px.svg"
+						alt="facebook icon"
+					/>
+				</h3>
+				<p>
+					一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+				</p>
+			</div>
+			<div class="col-md-6 row">
+				<div class="col-md-6 d-flex align-items-end">
+					<button
+						type="button"
+						class="
+							product-details-ticket-btn
+							btn btn-outline-secondary
+							w-100
+							text-nowrap
+						"
+					>
+						收藏展覽
+					</button>
+				</div>
+				<div class="col-md-6 d-flex align-items-end">
+					<button
+						type="button"
+						class="
+							product-details-ticket-btn
+							btn btn-primary
+							w-100
+							text-nowrap
+						"
+					>
+						購買票券
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="product-details-banner mb-8"></div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<img
+				src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-j5gCOKZdm6I-unsplash.jpg"
+				alt="藝饗宴 image"
+			/>
+		</div>
+		<div class="col-md-8">
+			<h5 class="fs-5 fw-bold lh-base">藝饗宴</h5>
+			<h6 class="fs-5 lh-base">​Celebration of Style and Art</h6>
+			<p class="fw-light text-dark fw-light">
+				<span class="product-details-desc mb-4 d-block"
+					>匯集美、日、臺等地的藝術家與時尚設計師的作品。以跨界跨域的潮流文化為軸心，結合街頭塗鴉、時尚文化、名牌符號等，藉由各自特殊的表現語彙，傳達對社會當下流行文化的自我反嘲。然而這些深受大眾喜愛的藝術家，也讓「時尚」的概念不再扁平單一，相反的，他們展現了對社會更具魅力的反思，也提出了對於潮文化的自我觀點。</span
+				>
+				<span class="d-block"
+					>從臺灣前輩藝術家林淵、國際知名的超扁平藝術家村上隆、臺灣彩繪雕塑家洪易、以及當代新玩具雕塑代表Kaws
+					等，都受到許多收藏家的喜愛，同時也是當代藝術史上重要的一員。在這個展區，向藏家借展的作品都是一時之選，也反映出街頭藝術發展的某一種共性。另外，在與時尚跨界的藝術表現上，有永遠嘲諷時尚卻很時尚的藝術家Death
+					NYC、臺灣新銳服裝設計師吳日云、尋找鎂光燈背後那真實藝術家身分的郭彥甫、年輕雕塑家賴冠仲、橫跨藝術與時尚設計師雙重身分的雙人組陳薇與李崇德、創造出療癒角色俊寶Zunbo
+					的韓國設計團隊Sakubo，以及日本藝術家喜久田尚美、南館麻美子等。展區透過空間的裝置與時尚語彙，完美詮釋了藝術、設計與潮流文化的多元樣貌。</span
+				>
+			</p>
+		</div>
+	</div>
+
+	<div class="recommend my-15">
+		<h3 class="section-title">猜你也喜歡...</h3>
+		<ul
+			class="
+				recommend-list
+				d-flex
+				justify-content-md-end
+				flex-column flex-md-row
+				list-unstyled
+			"
+		>
+			<li>
+				<a href="#" class="mb-1">
+					<img
+						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+						alt="recommend event image 1"
+						class="recommend-list-item-img"
+					/>
+				</a>
+				<h4 class="fw-bold mb-1 fs-5 lh-base">No.22 線上設計展</h4>
+				<p class="recommend-list-item-price">$350</p>
+			</li>
+			<li>
+				<a href="#" class="mb-1">
+					<img
+						class="recommend-list-item-img"
+						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
+						alt="recommend event image 2"
+					/>
+				</a>
+				<h4 class="fw-bold mb-1 fs-5 lh-base">No.22 線上設計展</h4>
+				<p class="recommend-list-item-price">$350</p>
+			</li>
+			<li>
+				<a href="#" class="mb-1">
+					<img
+						class="recommend-list-item-img"
+						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg"
+						alt="recommend event image 3"
+					/>
+				</a>
+				<h4 class="fw-bold mb-1 fs-5 lh-base">No.22 線上設計展</h4>
+				<p class="recommend-list-item-price">$350</p>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="footer-banner d-flex align-items-end">
+		<div class="container">
+			<div class="mb-9">
+				<h5 class="fs-2 lh-base mb-3 fw-bold text-white">
+					想收到最新消息嗎？<br />
+					快訂閱我們！
+				</h5>
+				<div class="input-group justify-content-start">
+					<input
+						type="email"
+						class="input-group-text bg-white p-3"
+						placeholder="輸入您的電子信箱"
+						aria-label=""
+						aria-describedby="btnGroupAddon2"
+					/>
+					<button
+						class="
+							footer-banner-btn
+							input-group-text
+							btn-primary
+							text-nowrap
+						"
+						id="btnGroupAddon2"
+					>
+						訂閱
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="d-flex justify-content-between py-7">
+			<div class="d-flex align-items-center gap-4">
+				<h4 class="">
+					<a href="#" class="fs-4 lh-1 text-black">EXHIBINECTION</a>
+				</h4>
+				<div>© 2020. All Rights Reserved.</div>
+			</div>
+			<ul class="list-unstyled d-flex align-items-center gap-6 mb-0">
+				<li>
+					<a href="#" class="footer-sign-in text-dark">Sign in</a>
+				</li>
+				<li>
+					<a href="#" class="footer-sign-up text-dark">Sign up</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
