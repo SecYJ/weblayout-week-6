@@ -44,7 +44,13 @@
 						<a href="#" class="btn-cta text-dark d-none d-md-block"
 							>Sign up</a
 						>
-						<a href="#" class="header-menu position-relative">
+						<a
+							href="#"
+							class="header-menu position-relative"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasRight"
+							aria-controls="offcanvasRight"
+						>
 							<span class="material-icons">
 								confirmation_number
 							</span>
@@ -76,7 +82,7 @@
 		
 <nav
 	class="
-		nav
+		navigation
 		d-flex
 		justify-content-center
 		border-bottom border-dark
@@ -95,243 +101,73 @@
 </nav>
 
 <div class="container">
-	<!-- <div class="mt-11 mt-md-20 mb-10">
-		<div class="row mb-2">
-			<div class="col-md-6">
-				<img
-					src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
-					alt="2020 台味設計展"
-				/>
-			</div>
-			<div class="col-md-6 row">
-				<div class="col-md-6 position-relative">
-					<div
-						class="
-							position-absolute
-							top-40
-							start-50
-							translate-middle-x
-							text-center
-						"
-					>
-						<div class="d-flex align-items-center">
-							<a href="#" class="material-icons text-black"
-								>remove</a
-							>
-							<strong
-								class="
-									product-details-ticket-text
-									mx-10
-									fs-1
-									lh-base
-								"
-								>01</strong
-							>
-							<a href="#" class="material-icons text-black"
-								>add</a
-							>
-						</div>
-						<p class="fw-light">張</p>
-					</div>
-				</div>
-				<div
-					class="
-						border-start border-dark
-						text-center
-						col-md-6
-						position-relative
-					"
-				>
-					<div
-						class="
-							position-absolute
-							top-40
-							start-50
-							translate-middle-x
-							d-flex
-							flex-column
-						"
-					>
-						<strong
-							class="
-								product-details-ticket-text
-								fs-1
-								lh-base
-								d-block
-							"
-							>NT1350</strong
-						>
-						<p class="mb-2 fw-light">票種</p>
-						<ul class="list-unstyled d-flex">
-							<li>
-								<a
-									href="#"
-									class="
-										text-black
-										product-details-ticket-selection
-									"
-									>學生</a
-								>
-							</li>
-							<li>
-								<a
-									href="#"
-									class="
-										text-black
-										product-details-ticket-selection
-										product-details-ticket-selection-active
-									"
-									>全票</a
-								>
-							</li>
-							<li>
-								<a
-									href="#"
-									class="
-										text-black
-										product-details-ticket-selection
-									"
-									>愛心</a
-								>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-6">
-				<h2
-					class="
-						fs-5
-						fw-bold
-						lh-base
-						d-flex
-						align-items-center
-						mb-md-1
-					"
-				>
-					2020 台味設計展
-					<img
-						class="ms-1"
-						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/exhibition-week6/facebook-24px.svg"
-						alt="facebook icon"
-					/>
-				</h2>
-				<p>
-					一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
-				</p>
-			</div>
-			<div class="col-md-6 row">
-				<div class="col-md-6 d-flex align-items-end">
-					<button
-						type="button"
-						class="
-							product-details-ticket-btn
-							btn btn-outline-secondary
-							w-100
-							text-nowrap
-						"
-					>
-						收藏展覽
-					</button>
-				</div>
-				<div class="col-md-6 d-flex align-items-end">
-					<button
-						type="button"
-						class="
-							product-details-ticket-btn
-							btn btn-primary
-							w-100
-							text-nowrap
-						"
-					>
-						購買票券
-					</button>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
 	<div class="mt-11 mt-md-20 mb-10">
-		<div class="row mb-2">
+		<div class="row mb-0 mb-md-2">
 			<div class="col-md-6">
-				<div>
+				<div class="position-relative">
 					<img
 						src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
 						class="info-ticket-img w-100"
 						alt="design ticket image"
 					/>
-					<div class="mt-2">
-						<h2
-							class="
-								fs-5
-								lh-base
-								fw-bold
-								d-flex
-								align-items-center
-							"
-						>
-							2020 台味設計展
-							<img
-								src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/exhibition-week6/facebook-24px.svg"
-								alt="facebook icon"
-								class="ms-2"
-							/>
-						</h2>
-						<p class="fw-light">
-							一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
-						</p>
-					</div>
+					<p
+						class="
+							info-img-text
+							position-absolute
+							top-50
+							end-0
+							translate-middle-y
+							fs-5
+							fw-bold
+							text-white
+							d-none d-md-block
+						"
+					>
+						01 JUN <br />
+						| <br />
+						31 OCT
+					</p>
 				</div>
 			</div>
-			<div class="col-md-6 row">
-				<div class="col-md-6 border-black position-relative">
-					<div
-						class="
-							position-absolute
-							top-40
-							start-50
-							translate-middle-x
-						"
-					>
-						<div class="d-flex align-items-center info-highlight">
-							<a href="#" class="material-icons">remove</a>
-							<strong class="mx-10 fs-1 lh-base"> 01</strong>
-							<a href="#" class="material-icons">add</a>
+			<div class="col-md-6 order-2 order-md-0">
+				<div class="row h-100">
+					<div class="col-md-6 border-end border-black">
+						<div class="mt-10 mt-md-22">
+							<div
+								class="
+									info-highlight
+									d-flex
+									justify-content-center
+									align-items-center
+								"
+							>
+								<a href="#" class="material-icons">remove</a>
+								<strong class="mx-10 fs-1 lh-base"> 01</strong>
+								<a href="#" class="material-icons">add</a>
+							</div>
+							<p class="text-center fw-light">张</p>
 						</div>
-						<p class="text-center fw-light">张</p>
 					</div>
-				</div>
-				<div class="col-md-6">
-					<div
-						class="
-							info-pricing
-							position-relative
-							border-start border-black
-						"
-					>
-						<div
-							class="
-								position-absolute
-								top-40
-								start-50
-								translate-middle-x
-							"
-						>
+					<div class="col-md-6">
+						<div class="mt-10 mt-md-22">
 							<strong
 								class="
+									info-highlight
 									d-block
 									fs-1
 									lh-base
 									text-center
-									info-highlight
 								"
 								>NT$350</strong
 							>
 							<div class="fw-light text-center mb-2">票种</div>
-							<div class="d-flex text-center">
+							<div
+								class="
+									d-flex
+									justify-content-center
+									text-center
+								"
+							>
 								<a href="#" class="info-ticket-selection"
 									>學生</a
 								>
@@ -343,7 +179,50 @@
 								>
 							</div>
 						</div>
-						<a href="#" class="btn btn-primary">購買票券</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 order-1 order-md-0">
+				<div class="mt-2">
+					<div class="d-flex align-items-center mb-1 mb-md-0">
+						<h2
+							class="
+								fs-5
+								lh-base
+								fw-bold
+								d-flex
+								align-items-center
+								me-auto
+							"
+						>
+							2020 台味設計展
+							<img
+								src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/exhibition-week6/facebook-24px.svg"
+								alt="facebook icon"
+								class="ms-2"
+							/>
+						</h2>
+						<p class="fw-medium d-md-none">01 JUN — 31 OCT</p>
+					</div>
+					<p class="fw-light">
+						一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+					</p>
+				</div>
+			</div>
+			<div class="col-md-6 order-3 order-md-0">
+				<div class="row">
+					<div class="col-6">
+						<a
+							href="#"
+							class="info-btn btn btn-outline-secondary w-100"
+						>
+							收藏展覽
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="#" class="info-btn btn btn-primary w-100"
+							>購買票券</a
+						>
 					</div>
 				</div>
 			</div>
@@ -366,7 +245,7 @@
 				src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-j5gCOKZdm6I-unsplash.jpg"
 				alt="藝饗宴 image"
 				class="info-celebration-img"
-			/>c
+			/>
 		</div>
 		<div class="col-md-8">
 			<h2 class="fs-5 fw-bold lh-base mb-1">藝饗宴</h2>
@@ -450,18 +329,18 @@
 	</div>
 </div>
 
-<footer class="footer">
-	<div class="footer-banner d-flex align-items-end">
+<footer>
+	<div class="banner banner-subscribe d-flex align-items-end">
 		<div class="container">
 			<div class="mb-9">
-				<h5 class="fs-2 lh-base mb-3 fw-bold text-white">
+				<h5 class="mb-3 text-white fs-2 lh-base fw-bold">
 					想收到最新消息嗎？<br />
 					快訂閱我們！
 				</h5>
-				<div class="input-group justify-content-start">
+				<div class="input-group flex-nowrap">
 					<input
 						type="email"
-						class="input-group-text bg-white p-3"
+						class="bg-white input-group-text"
 						placeholder="輸入您的電子信箱"
 						aria-label=""
 						aria-describedby="btnGroupAddon2"
@@ -483,24 +362,283 @@
 	</div>
 	<div class="container">
 		<div class="d-flex justify-content-between py-7">
-			<div class="d-flex align-items-center gap-4">
-				<h4 class="">
-					<a href="#" class="fs-4 lh-1 text-black">EXHIBINECTION</a>
-				</h4>
+			<div
+				class="
+					gap-0 gap-md-4
+					d-flex
+					flex-column flex-md-row
+					align-items-md-center
+				"
+			>
+				<h3>
+					<a href="#" class="fs-4 lh-1">EXHIBINECTION</a>
+				</h3>
 				<div>© 2020. All Rights Reserved.</div>
 			</div>
-			<ul class="list-unstyled d-flex align-items-center gap-6 mb-0">
+			<ul
+				class="
+					gap-6
+					mb-0
+					list-unstyled
+					d-none d-md-flex
+					align-items-md-center
+				"
+			>
 				<li>
-					<a href="#" class="footer-sign-in text-dark">Sign in</a>
+					<a href="#" class="text-dark btn-cta">Sign in</a>
 				</li>
 				<li>
-					<a href="#" class="footer-sign-up text-dark">Sign up</a>
+					<a href="#" class="text-dark btn-cta">Sign up</a>
 				</li>
 			</ul>
 		</div>
 	</div>
 </footer>
 
+
+		<div
+			class="
+				offcanvas offcanvas-end
+				bg-black
+				pt-5 pt-md-8
+				px-md-8
+				pb-7 pb-md-6
+			"
+			tabindex="-1"
+			id="offcanvasRight"
+			aria-labelledby="offcanvasRightLabel"
+		>
+			<h5 class="fs4 fs-md-2 fw-bold lh-base text-white mb-3">
+				Cart List
+			</h5>
+
+			<div class="d-flex flex-column">
+				<ul class="list-unstyled">
+					<li
+						class="
+							position-relative
+							bg-white
+							pt-9 pt-md-7
+							px-4 px-md-8
+							pb-4 pb-md-6
+							rounded-4
+							mb-2 mb-md-3
+						"
+					>
+						<a
+							href="#"
+							class="
+								material-icons
+								position-absolute
+								top-4
+								start-4
+							"
+							>close</a
+						>
+						<div class="d-flex justify-content-between">
+							<div class="d-flex">
+								<div class="me-4">
+									<img
+										src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+										class="offcanvas-cart-img"
+										alt="cart item image 1"
+									/>
+								</div>
+								<div
+									class="
+										d-flex
+										flex-column
+										justify-content-between
+									"
+								>
+									<div>
+										<h3 class="fs-6 fw-bold mb-1 lh-base">
+											2020 台味設計展
+										</h3>
+										<h4 class="fs-6 lh-base mb-1 fw-medium">
+											01 JUN — 31 OCT
+										</h4>
+										<p>全票</p>
+									</div>
+									<strong class="d-block fs-5 fw-bold"
+										>NT1350</strong
+									>
+								</div>
+							</div>
+							<div class="d-flex align-items-center">
+								<div
+									class="
+										d-flex
+										flex-column flex-md-row
+										align-items-center
+									"
+								>
+									<a href="#" class="material-icons"
+										>remove</a
+									>
+									<strong class="fs-5 mx-md-3 my-1 my-md-0"
+										>01</strong
+									>
+									<a href="#" class="material-icons">add</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li
+						class="
+							position-relative
+							bg-white
+							pt-9 pt-md-7
+							px-4 px-md-8
+							pb-4 pb-md-6
+							rounded-4
+							mb-2 mb-md-3
+						"
+					>
+						<a
+							href="#"
+							class="
+								material-icons
+								position-absolute
+								top-4
+								start-4
+							"
+							>close</a
+						>
+						<div class="d-flex justify-content-between">
+							<div class="d-flex">
+								<div class="me-4">
+									<img
+										src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+										class="offcanvas-cart-img"
+										alt="cart item image 1"
+									/>
+								</div>
+								<div
+									class="
+										d-flex
+										flex-column
+										justify-content-between
+									"
+								>
+									<div>
+										<h3 class="fs-6 fw-bold mb-1 lh-base">
+											2020 台味設計展
+										</h3>
+										<h4 class="fs-6 lh-base mb-1 fw-medium">
+											01 JUN — 31 OCT
+										</h4>
+										<p>全票</p>
+									</div>
+									<strong class="d-block fs-5 fw-bold"
+										>NT1350</strong
+									>
+								</div>
+							</div>
+							<div class="d-flex align-items-center">
+								<div
+									class="
+										d-flex
+										flex-column flex-md-row
+										align-items-center
+									"
+								>
+									<a href="#" class="material-icons"
+										>remove</a
+									>
+									<strong class="fs-5 mx-md-3 my-1 my-md-0"
+										>01</strong
+									>
+									<a href="#" class="material-icons">add</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li
+						class="
+							position-relative
+							bg-white
+							pt-9 pt-md-7
+							px-4 px-md-8
+							pb-4 pb-md-6
+							rounded-4
+							mb-2 mb-md-3
+						"
+					>
+						<a
+							href="#"
+							class="
+								material-icons
+								position-absolute
+								top-4
+								start-4
+							"
+							>close</a
+						>
+						<div class="d-flex justify-content-between">
+							<div class="d-flex">
+								<div class="me-4">
+									<img
+										src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+										class="offcanvas-cart-img"
+										alt="cart item image 1"
+									/>
+								</div>
+								<div
+									class="
+										d-flex
+										flex-column
+										justify-content-between
+									"
+								>
+									<div>
+										<h3 class="fs-6 fw-bold mb-1 lh-base">
+											2020 台味設計展
+										</h3>
+										<h4 class="fs-6 lh-base mb-1 fw-medium">
+											01 JUN — 31 OCT
+										</h4>
+										<p>全票</p>
+									</div>
+									<strong class="d-block fs-5 fw-bold"
+										>NT1350</strong
+									>
+								</div>
+							</div>
+							<div class="d-flex align-items-center">
+								<div
+									class="
+										d-flex
+										flex-column flex-md-row
+										align-items-center
+									"
+								>
+									<a href="#" class="material-icons"
+										>remove</a
+									>
+									<strong class="fs-5 mx-md-3 my-1 my-md-0"
+										>01</strong
+									>
+									<a href="#" class="material-icons">add</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<div class="mt-auto d-flex align-items-center text-white w-100">
+					<div class="d-flex me-auto fs-5 fw-medium">
+						<p class="me-6">小計</p>
+						<p>NT1050</p>
+					</div>
+					<a
+						href="./checkout-1.html"
+						class="btn btn-outline-secondary"
+						>前往結帳</a
+					>
+				</div>
+			</div>
+		</div>
 
 		<script>
 			const swiper = new Swiper(".swiper-container", {
