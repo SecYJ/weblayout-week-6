@@ -76,6 +76,7 @@ $danger:        $red !default;
 $light:         #efefef !default;  //$gray-100 !default;
 $dark:          #707070 !default;  //$gray-900 !default;
 $black:         #000 !default;
+$white:         #fff !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -89,6 +90,7 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark,
   "black":      $black,
+  "white":      $white,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -268,6 +270,7 @@ $spacers: (
   14: $spacer * 3.5,   // 56px;
   15: $spacer * 3.75,  // 60px;
   20: $spacer * 5,     // 80px;
+  22: $spacer * 5.5,    // 88px;
   24: $spacer * 6,     // 96px,
 ) !default;
 

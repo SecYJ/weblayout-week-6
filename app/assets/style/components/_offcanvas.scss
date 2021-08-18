@@ -1,0 +1,17 @@
+.offcanvas {
+	&-end {
+		width: 540px;
+		top: 80px;
+
+		@include mobile() {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	&-cart-img {
+		width: 120px;
+		height: 120px;
+		object-fit: cover;
+	}
+}

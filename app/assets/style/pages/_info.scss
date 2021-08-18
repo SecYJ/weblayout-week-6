@@ -56,7 +56,7 @@
 	}
 
 	&-pricing {
-		height: 256px;
+		// height: 256px;
 	}
 
 	&-highlight {
@@ -72,5 +72,13 @@
 			height: 400px;
 			object-fit: cover;
 		}
+	}
+
+	&-btn {
+		margin-top: 42px;
+	}
+
+	&-img-text {
+		width: 65px;
 	}
 }
