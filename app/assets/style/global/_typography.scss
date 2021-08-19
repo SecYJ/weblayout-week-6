@@ -35,6 +35,12 @@
 				padding-left: 51px;
 				padding-right: 51px;
 			}
+
+			&:first-child {
+				@include mobile() {
+					margin-right: 15px;
+				}
+			}
 		}
 	}
 

@@ -4,14 +4,28 @@
 		top: 80px;
 
 		@include mobile() {
+			top: 62px;
 			padding-left: 15px;
 			padding-right: 15px;
 		}
 	}
 
-	&-cart-img {
-		width: 120px;
-		height: 120px;
-		object-fit: cover;
+	&-cart {
+		&-img {
+			width: 120px;
+			height: 120px;
+			object-fit: cover;
+		}
+
+		&-btn {
+			padding: 10px 27px;
+			background-color: #fff;
+			color: $secondary;
+
+			&:hover {
+				background-color: $secondary;
+				color: #fff;
+			}
+		}
 	}
 }
