@@ -1,39 +1,3 @@
-.product {
-	&-details {
-		&-wrapper {
-			height: 256px;
-		}
-
-		&-img {
-			height: 256px;
-		}
-
-		&-ticket {
-			&-text {
-				margin-bottom: 23px;
-			}
-
-			&-selection {
-				width: 65px;
-				transition: border 0.15s;
-				border-bottom: 1px solid transparent;
-
-				&:hover {
-					border-bottom-color: $primary;
-				}
-
-				&-active {
-					border-bottom-color: $primary;
-				}
-			}
-
-			&-btn {
-				padding: 10px 96px;
-			}
-		}
-	}
-}
-
 .info {
 	&-desc {
 		text-indent: 25px;
@@ -55,10 +19,6 @@
 		}
 	}
 
-	&-pricing {
-		// height: 256px;
-	}
-
 	&-highlight {
 		margin-bottom: 23px;
 	}
@@ -67,15 +27,6 @@
 		&-img {
 			height: 559px;
 		}
-
-		&-banner {
-			height: 400px;
-			object-fit: cover;
-		}
-	}
-
-	&-btn {
-		margin-top: 42px;
 	}
 
 	&-img-text {

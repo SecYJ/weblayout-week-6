@@ -1,0 +1,40 @@
+.btn {
+	&-spacing {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	&-replay {
+		padding-left: 38px;
+		padding-right: 38px;
+	}
+
+	&-art {
+		@include mobile() {
+			padding-left: 51px;
+			padding-right: 51px;
+		}
+
+		&:first-child {
+			@include mobile() {
+				margin-right: 15px;
+			}
+		}
+	}
+
+	&-canvas {
+		padding-left: 27px;
+		padding-right: 27px;
+		background-color: #fff;
+		color: $secondary;
+
+		&:hover {
+			background-color: $secondary;
+			color: #fff;
+		}
+	}
+
+	&-ticket {
+		margin-top: 42px;
+	}
+}

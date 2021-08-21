@@ -1,0 +1,25 @@
+.header {
+	&-title {
+		font-size: 24px;
+		line-height: 1;
+
+		@include mobile() {
+			font-size: 22px;
+			line-height: 23px;
+		}
+	}
+
+	&-menu {
+
+		&-notification {
+			width: 22px;
+			height: 18px;
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+
+	&-cta {
+		line-height: 21px;
+	}
+}

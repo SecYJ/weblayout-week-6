@@ -4,10 +4,6 @@
 
 	&-replay {
 		background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people2.png);
-
-		&-btn {
-			padding: 10px 38px;
-		}
 	}
 
 	&-subscribe {
@@ -26,32 +22,14 @@
 				margin-left: 0;
 			}
 		}
-
-		&-btn {
-			padding-top: 10px;
-			padding-bottom: 10px;
-
-			@include mobile() {
-				padding-left: 51px;
-				padding-right: 51px;
-			}
-
-			&:first-child {
-				@include mobile() {
-					margin-right: 15px;
-				}
-			}
-		}
 	}
 
 	&-celebration {
 		height: 400px;
 		background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg);
 	}
-}
 
-.btn {
-	&-cta {
-		line-height: 21px;
+	&-info-celebration {
+		height: 400px;
 	}
 }

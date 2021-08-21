@@ -16,16 +16,5 @@
 			height: 120px;
 			object-fit: cover;
 		}
-
-		&-btn {
-			padding: 10px 27px;
-			background-color: #fff;
-			color: $secondary;
-
-			&:hover {
-				background-color: $secondary;
-				color: #fff;
-			}
-		}
 	}
 }

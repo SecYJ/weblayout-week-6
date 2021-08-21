@@ -9,17 +9,18 @@
 // base
 @import "./global/base";
 @import "./global/grid";
-@import "./global/mixins";
-@import "./global/typography";
-@import "./components";
 
 // components
 @import "./components/navbar";
 @import "./components/offcanvas";
+@import "./components/banner";
+@import "./components/btn";
+@import "./components/header";
+@import "./components/timeline";
 
-@import "./global/layout";
-
-@import "./index";
+// pages
+@import "./pages/index";
 @import "./pages/info";
 @import "./pages/design";
-@import "./checkout/checkout";
+@import "./pages/recommend";
+@import "./pages/checkout";
