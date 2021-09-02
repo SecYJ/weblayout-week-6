@@ -10623,6 +10623,11 @@ fieldset:disabled .btn {
   left: 4px !important;
 }
 
+.object-cover {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
