@@ -90,9 +90,6 @@ $utilities: map-merge(
 					responsive: true,
 				)
 			),
-		// "border-end": (
-		// 	responsive: true,
-		// ),
 		"rounded":
 			map-merge(
 				map-get($utilities, "rounded"),
@@ -107,5 +104,10 @@ $utilities: map-merge(
 						),
 				)
 			),
+		"object-fit": (
+			property: object-fit,
+			class: object,
+			values: cover,
+		),
 	)
 );
