@@ -17979,6 +17979,40 @@ img {
   height: auto;
 }
 
+.header {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 17px;
+  }
+}
+
+.header-title {
+  font-size: 24px;
+  line-height: 1;
+}
+
+@media (max-width: 767px) {
+  .header-title {
+    font-size: 22px;
+    line-height: 23px;
+  }
+}
+
+.header-menu-notification {
+  padding: 2px 8px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.header-cta {
+  line-height: 21px;
+}
+
 .navigation {
   gap: 18px;
   padding: 18px 0;
@@ -18023,39 +18057,6 @@ img {
      object-fit: cover;
 }
 
-.banner {
-  background-size: cover;
-  background-position: center center;
-}
-
-.banner-replay {
-  background-image: url(../images/people2.png);
-}
-
-.banner-subscribe {
-  height: 400px;
-  background-image: url(../images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
-}
-
-.banner-art {
-  height: 480px;
-  background-image: url(../images/ricardo-angel-1.jpg);
-}
-
-.banner-art-content {
-  margin-left: 95px;
-}
-
-@media (max-width: 767px) {
-  .banner-art-content {
-    margin-left: 0;
-  }
-}
-
-.banner-info-celebration {
-  height: 400px;
-}
-
 .btn-spacing {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -18068,14 +18069,8 @@ img {
 
 @media (max-width: 767px) {
   .btn-art {
-    padding-left: 51px;
-    padding-right: 51px;
-  }
-}
-
-@media (max-width: 767px) {
-  .btn-art:first-child {
-    margin-right: 15px;
+    padding-left: 48px;
+    padding-right: 48px;
   }
 }
 
@@ -18093,29 +18088,6 @@ img {
 
 .btn-ticket {
   margin-top: 42px;
-}
-
-.header-title {
-  font-size: 24px;
-  line-height: 1;
-}
-
-@media (max-width: 767px) {
-  .header-title {
-    font-size: 22px;
-    line-height: 23px;
-  }
-}
-
-.header-menu-notification {
-  width: 22px;
-  height: 18px;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.header-cta {
-  line-height: 21px;
 }
 
 .timeline {
@@ -18159,6 +18131,29 @@ img {
 
 .timeline-pointer.active::before {
   background: #E31277;
+}
+
+.bg-base {
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-replay {
+  background-image: url(../images/people2.png);
+}
+
+.bg-subscribe {
+  height: 400px;
+  background-image: url(../images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
+}
+
+.bg-art {
+  height: 480px;
+  background-image: url(../images/ricardo-angel-1.jpg);
+}
+
+.bg-info-celebration {
+  height: 400px;
 }
 
 .index-popular-card-title {

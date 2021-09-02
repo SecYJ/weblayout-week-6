@@ -13,11 +13,7 @@
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 		/>
-		<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-		<!-- <link
-			rel="stylesheet"
-			href="https://unpkg.com/swiper/swiper-bundle.min.css"
-		/> -->
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="./assets/style/all.css" />
 	</head>
@@ -27,7 +23,7 @@
 			<div class="container">
 				<header
 					class="
-						h-60px h-md-80px
+						header
 						d-flex
 						justify-content-between
 						align-items-center
@@ -59,21 +55,19 @@
 							data-bs-target="#offcanvasRight"
 							aria-controls="offcanvasRight"
 						>
-							<i class="material-icons"> confirmation_number </i>
+							<span class="material-icons align-middle">
+								confirmation_number
+							</span>
 							<span
 								class="
 									header-menu-notification
-									top-0
-									text-center text-white
-									position-absolute
-									d-inline-block
+									badge
 									bg-primary
 									rounded-pill
+									position-absolute
+									top-0
 									start-100
 									translate-middle
-									d-flex
-									justify-content-center
-									align-items-center
 								"
 							>
 								3
@@ -89,7 +83,7 @@
 	class="
 		navigation
 		d-flex
-		justify-content-center
+		justify-content-md-center
 		border-bottom border-dark
 		text-nowrap
 	"
@@ -413,7 +407,7 @@
 		<script>
 			AOS.init();
 		</script>
-		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 		<script>
 			const swiper = new Swiper(".swiper", {
 				loop: true,

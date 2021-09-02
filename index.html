@@ -13,11 +13,7 @@
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 		/>
-		<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-		<!-- <link
-			rel="stylesheet"
-			href="https://unpkg.com/swiper/swiper-bundle.min.css"
-		/> -->
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="./assets/style/all.css" />
 	</head>
@@ -27,7 +23,7 @@
 			<div class="container">
 				<header
 					class="
-						h-60px h-md-80px
+						header
 						d-flex
 						justify-content-between
 						align-items-center
@@ -59,21 +55,19 @@
 							data-bs-target="#offcanvasRight"
 							aria-controls="offcanvasRight"
 						>
-							<i class="material-icons"> confirmation_number </i>
+							<span class="material-icons align-middle">
+								confirmation_number
+							</span>
 							<span
 								class="
 									header-menu-notification
-									top-0
-									text-center text-white
-									position-absolute
-									d-inline-block
+									badge
 									bg-primary
 									rounded-pill
+									position-absolute
+									top-0
 									start-100
 									translate-middle
-									d-flex
-									justify-content-center
-									align-items-center
 								"
 							>
 								3
@@ -87,35 +81,45 @@
 		
 <div
 	class="
-		banner banner-art
+		bg-base bg-art
 		text-white
 		d-flex
 		align-items-end align-items-md-center
 	"
 >
 	<div class="container">
-		<div class="banner-art-content mb-20 mb-md-0">
-			<h2 class="mb-2 fs-2 fw-bold lh-base">台北當代藝術展</h2>
-			<h3 class="mb-4 fs-5 fw-bold lh-base">01 JUN - 31 OCT</h3>
-			<div class="d-flex">
-				<a
-					href="./info.html"
-					class="btn-art btn-spacing btn btn-primary me-md-2 px-md-12"
-				>
-					購買票券
-				</a>
-				<a
-					href="./design.html"
+		<div class="row mb-20 mb-md-0">
+			<div class="col-md-4 offset-md-1">
+				<h2 class="mb-2 fs-2 fw-bold lh-base">台北當代藝術展</h2>
+				<p class="mb-4 fs-5 fw-bold">01 JUN - 31 OCT</p>
+				<div
 					class="
-						btn-art btn-spacing
-						text-white
-						border-white
-						btn
-						px-md-12
+						d-flex
+						justify-content-between justify-content-md-start
 					"
 				>
-					詳細資訊
-				</a>
+					<a
+						href="./info.html"
+						class="
+							btn-art btn-spacing btn btn-primary
+							me-md-2
+							px-md-12
+						"
+					>
+						購買票券
+					</a>
+					<a
+						href="./design.html"
+						class="
+							btn-outline-white btn-art btn-spacing
+							border-white
+							btn
+							px-md-12
+						"
+					>
+						詳細資訊
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -125,7 +129,7 @@
 	class="
 		navigation
 		d-flex
-		justify-content-center
+		justify-content-md-center
 		border-bottom border-dark
 		text-nowrap
 	"
@@ -200,9 +204,7 @@
 											01 JUN — 31 OCT
 										</p>
 									</div>
-									<h6 class="mb-2 fs-5 fw-normal lh-base">
-										$350
-									</h6>
+									<p class="mb-2 fs-5">$350</p>
 									<p class="card-text fs-5 fw-medium">
 										一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
 									</p>
@@ -311,9 +313,7 @@
 										</p>
 									</div>
 
-									<h6 class="mb-2 fs-5 fw-normal lh-base">
-										$350
-									</h6>
+									<p class="mb-2 fs-5">$350</p>
 									<p class="card-text fs-5 fw-medium">
 										這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。
 									</p>
@@ -421,9 +421,7 @@
 											01 JUN — 31 OCT
 										</p>
 									</div>
-									<h6 class="mb-2 fs-5 fw-normal lh-base">
-										$350
-									</h6>
+									<p class="mb-2 fs-5">$350</p>
 									<p class="card-text fs-5 fw-medium">
 										設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
 									</p>
@@ -485,7 +483,7 @@
 		<h3 class="mt-5 mb-2 fs-2 lh-base fw-bold mt-md-15 mb-md-6">
 			直播回顧
 		</h3>
-		<div class="banner banner-replay row g-0">
+		<div class="bg-base bg-replay row g-0">
 			<div class="col-lg-5">
 				<div class="px-6 py-10 text-white bg-info">
 					<ul class="mb-8 d-flex fs-3 fw-bold lh-base list-unstyled">
@@ -574,27 +572,31 @@
 </div>
 
 <footer>
-	<div class="banner banner-subscribe d-flex align-items-end">
+	<div class="bg-base bg-subscribe d-flex align-items-end">
 		<div class="container">
 			<div class="mb-9" data-aos="fade-up">
 				<h5 class="mb-3 text-white fs-2 lh-base fw-bold">
 					想收到最新消息嗎？<br />
 					快訂閱我們！
 				</h5>
-				<div class="input-group flex-nowrap">
-					<input
-						type="email"
-						class="bg-white input-group-text"
-						placeholder="輸入您的電子信箱"
-						aria-label=""
-						aria-describedby="btnGroupAddon2"
-					/>
-					<button
-						class="input-group-text btn-primary text-nowrap"
-						id="btnGroupAddon2"
-					>
-						訂閱
-					</button>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="input-group">
+							<input
+								type="email"
+								class="form-control bg-white input-group-text"
+								placeholder="輸入您的電子信箱"
+								aria-label=""
+								aria-describedby="btnGroupAddon2"
+							/>
+							<button
+								class="btn-primary text-nowrap"
+								id="btnGroupAddon2"
+							>
+								訂閱
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -614,7 +616,7 @@
 				<h3>
 					<a href="#" class="fs-4 lh-1">EXHIBINECTION</a>
 				</h3>
-				<div>© 2020. All Rights Reserved.</div>
+				<p>© 2020. All Rights Reserved.</p>
 			</div>
 			<ul
 				class="
@@ -895,7 +897,7 @@
 		<script>
 			AOS.init();
 		</script>
-		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 		<script>
 			const swiper = new Swiper(".swiper", {
 				loop: true,

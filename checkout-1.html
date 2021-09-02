@@ -13,11 +13,7 @@
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 		/>
-		<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-		<!-- <link
-			rel="stylesheet"
-			href="https://unpkg.com/swiper/swiper-bundle.min.css"
-		/> -->
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="./assets/style/all.css" />
 	</head>
@@ -27,7 +23,7 @@
 			<div class="container">
 				<header
 					class="
-						h-60px h-md-80px
+						header
 						d-flex
 						justify-content-between
 						align-items-center
@@ -59,21 +55,19 @@
 							data-bs-target="#offcanvasRight"
 							aria-controls="offcanvasRight"
 						>
-							<i class="material-icons"> confirmation_number </i>
+							<span class="material-icons align-middle">
+								confirmation_number
+							</span>
 							<span
 								class="
 									header-menu-notification
-									top-0
-									text-center text-white
-									position-absolute
-									d-inline-block
+									badge
 									bg-primary
 									rounded-pill
+									position-absolute
+									top-0
 									start-100
 									translate-middle
-									d-flex
-									justify-content-center
-									align-items-center
 								"
 							>
 								3
@@ -89,50 +83,34 @@
 	<div class="checkout row pt-5">
 		<div class="col-md-8">
 			<div>
-				<div class="row">
-					<div class="col-md-8">
-						<ul
-							class="
-								timeline
-								d-flex
-								justify-content-between
-								text-center
-								border-top border-2 border-primary
-								list-unstyled
-							"
-						>
-							<li
-								class="
-									timeline-pointer
-									pt-2
-									active
-									position-relative
-								"
-							>
-								確認訂單
-							</li>
-							<li class="timeline-pointer pt-2 position-relative">
-								填寫訂購資訊
-							</li>
-							<li class="timeline-pointer pt-2 position-relative">
-								填寫付款資訊
-							</li>
-							<li
-								class="
-									timeline-pointer
-									col-md-3
-									pt-2
-									position-relative
-								"
-							>
-								完成訂購
-							</li>
-						</ul>
-					</div>
-				</div>
+				<ul
+					class="
+						timeline
+						d-flex
+						justify-content-between
+						text-center
+						border-top border-2 border-primary
+						list-unstyled
+					"
+				>
+					<li class="timeline-pointer pt-2 active position-relative">
+						確認訂單
+					</li>
+					<li class="timeline-pointer pt-2 position-relative">
+						填寫訂購資訊
+					</li>
+					<li class="timeline-pointer pt-2 position-relative">
+						填寫付款資訊
+					</li>
+					<li
+						class="timeline-pointer col-md-3 pt-2 position-relative"
+					>
+						完成訂購
+					</li>
+				</ul>
 
-				<ul class="row mt-5 mt-md-7 list-unstyled">
-					<li class="col-12 mb-5">
+				<ul class="mt-5 mt-md-7 list-unstyled">
+					<li class="mb-5">
 						<div class="row">
 							<div class="col-6 col-md-4">
 								<img
@@ -222,7 +200,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="col-12 mb-5">
+					<li class="mb-5">
 						<div class="row">
 							<div class="col-6 col-md-4">
 								<img
@@ -312,7 +290,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="col-12 mb-5">
+					<li class="mb-5">
 						<div class="row">
 							<div class="col-6 col-md-4">
 								<img
@@ -692,7 +670,7 @@
 		<script>
 			AOS.init();
 		</script>
-		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 		<script>
 			const swiper = new Swiper(".swiper", {
 				loop: true,

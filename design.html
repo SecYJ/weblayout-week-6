@@ -13,11 +13,7 @@
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 		/>
-		<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-		<!-- <link
-			rel="stylesheet"
-			href="https://unpkg.com/swiper/swiper-bundle.min.css"
-		/> -->
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="./assets/style/all.css" />
 	</head>
@@ -27,7 +23,7 @@
 			<div class="container">
 				<header
 					class="
-						h-60px h-md-80px
+						header
 						d-flex
 						justify-content-between
 						align-items-center
@@ -59,21 +55,19 @@
 							data-bs-target="#offcanvasRight"
 							aria-controls="offcanvasRight"
 						>
-							<i class="material-icons"> confirmation_number </i>
+							<span class="material-icons align-middle">
+								confirmation_number
+							</span>
 							<span
 								class="
 									header-menu-notification
-									top-0
-									text-center text-white
-									position-absolute
-									d-inline-block
+									badge
 									bg-primary
 									rounded-pill
+									position-absolute
+									top-0
 									start-100
 									translate-middle
-									d-flex
-									justify-content-center
-									align-items-center
 								"
 							>
 								3
@@ -89,7 +83,7 @@
 	class="
 		navigation
 		d-flex
-		justify-content-center
+		justify-content-md-center
 		text-center
 		border-bottom border-dark
 		text-nowrap
@@ -108,16 +102,7 @@
 
 <main class="main">
 	<ul class="list-unstyled">
-		<li
-			class="
-				bg-secondary
-				d-flex
-				align-items-center
-				py-11
-				pt-md-20
-				pb-md-13
-			"
-		>
+		<li class="bg-secondary py-11 pt-md-20 pb-md-13">
 			<div class="container">
 				<div class="row text-white">
 					<div class="col-md-4 d-flex flex-column order-2 order-md-0">
@@ -129,10 +114,12 @@
 						</p>
 					</div>
 					<div class="col-md-5">
-						<img
-							src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
-							alt="2020 台味設計展 image "
-						/>
+						<a href="./info.html">
+							<img
+								src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+								alt="2020 台味設計展 image "
+							/>
+						</a>
 					</div>
 					<div
 						class="
@@ -156,7 +143,7 @@
 				</div>
 			</div>
 		</li>
-		<li class="d-flex align-items-center py-11 pt-md-20 pb-md-13">
+		<li class="py-11 pt-md-20 pb-md-13">
 			<div class="container">
 				<div class="row justify-content-end text-secondary">
 					<div class="col-md-4 d-flex flex-column order-2 order-md-0">
@@ -168,10 +155,12 @@
 						</p>
 					</div>
 					<div class="col-md-5">
-						<img
-							src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
-							alt="No.22 線上設計展 image "
-						/>
+						<a href="./info.html">
+							<img
+								src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
+								alt="No.22 線上設計展 image "
+							/>
+						</a>
 					</div>
 					<div
 						class="
@@ -195,16 +184,7 @@
 				</div>
 			</div>
 		</li>
-		<li
-			class="
-				bg-secondary
-				d-flex
-				align-items-center
-				py-11
-				pt-md-20
-				pb-md-13
-			"
-		>
+		<li class="bg-secondary py-11 pt-md-20 pb-md-13">
 			<div class="container">
 				<div class="row text-white">
 					<div class="col-md-4 d-flex flex-column order-2 order-md-0">
@@ -216,10 +196,12 @@
 						</p>
 					</div>
 					<div class="col-md-5">
-						<img
-							src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg"
-							alt="高雄設計節 image "
-						/>
+						<a href="./info.html">
+							<img
+								src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg"
+								alt="高雄設計節 image "
+							/>
+						</a>
 					</div>
 					<div
 						class="
@@ -308,31 +290,31 @@
 </div>
 
 <footer>
-	<div class="banner banner-subscribe d-flex align-items-end">
+	<div class="bg-base bg-subscribe d-flex align-items-end">
 		<div class="container">
 			<div class="mb-9" data-aos="fade-up">
 				<h5 class="mb-3 text-white fs-2 lh-base fw-bold">
 					想收到最新消息嗎？<br />
 					快訂閱我們！
 				</h5>
-				<div class="input-group flex-nowrap">
-					<input
-						type="email"
-						class="bg-white input-group-text"
-						placeholder="輸入您的電子信箱"
-						aria-label=""
-						aria-describedby="btnGroupAddon2"
-					/>
-					<button
-						class="
-							input-group-text
-							btn-spacing btn-primary
-							text-nowrap
-						"
-						id="btnGroupAddon2"
-					>
-						訂閱
-					</button>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="input-group">
+							<input
+								type="email"
+								class="form-control bg-white input-group-text"
+								placeholder="輸入您的電子信箱"
+								aria-label=""
+								aria-describedby="btnGroupAddon2"
+							/>
+							<button
+								class="btn-spacing btn-primary text-nowrap"
+								id="btnGroupAddon2"
+							>
+								訂閱
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -352,7 +334,7 @@
 				<h3>
 					<a href="#" class="fs-4 lh-1">EXHIBINECTION</a>
 				</h3>
-				<div>© 2020. All Rights Reserved.</div>
+				<p>© 2020. All Rights Reserved.</p>
 			</div>
 			<ul
 				class="
@@ -633,7 +615,7 @@
 		<script>
 			AOS.init();
 		</script>
-		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 		<script>
 			const swiper = new Swiper(".swiper", {
 				loop: true,
