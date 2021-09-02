@@ -3,17 +3,17 @@
 	background-position: center center;
 
 	&-replay {
-		background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people2.png);
+		background-image: url(../images/people2.png);
 	}
 
 	&-subscribe {
 		height: 400px;
-		background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
+		background-image: url(../images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
 	}
 
 	&-art {
 		height: 480px;
-		background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
+		background-image: url(../images/ricardo-angel-1.jpg);
 
 		&-content {
 			margin-left: 95px;
@@ -22,11 +22,6 @@
 				margin-left: 0;
 			}
 		}
-	}
-
-	&-celebration {
-		height: 400px;
-		background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg);
 	}
 
 	&-info-celebration {

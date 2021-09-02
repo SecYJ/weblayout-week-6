@@ -17,6 +17,14 @@
 				border-color: $primary;
 			}
 		}
+
+		&-count {
+			border-right: 1px solid #000;
+
+			@include mobile() {
+				border: none;
+			}
+		}
 	}
 
 	&-highlight {
