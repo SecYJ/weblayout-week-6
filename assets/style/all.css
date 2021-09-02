@@ -17956,6 +17956,10 @@ fieldset:disabled .btn {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: 0;
 }
@@ -18025,17 +18029,17 @@ img {
 }
 
 .banner-replay {
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people2.png);
+  background-image: url(../images/people2.png);
 }
 
 .banner-subscribe {
   height: 400px;
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
+  background-image: url(../images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
 }
 
 .banner-art {
   height: 480px;
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
+  background-image: url(../images/ricardo-angel-1.jpg);
 }
 
 .banner-art-content {
@@ -18046,11 +18050,6 @@ img {
   .banner-art-content {
     margin-left: 0;
   }
-}
-
-.banner-celebration {
-  height: 400px;
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/max-van-den-oetelaar-IMYe9uYN27E-unsplash.jpg);
 }
 
 .banner-info-celebration {
@@ -18184,6 +18183,16 @@ img {
 
 .info-ticket-selection:hover {
   border-color: #E31277;
+}
+
+.info-ticket-count {
+  border-right: 1px solid #000;
+}
+
+@media (max-width: 767px) {
+  .info-ticket-count {
+    border: none;
+  }
 }
 
 .info-highlight {

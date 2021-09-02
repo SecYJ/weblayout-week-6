@@ -9,11 +9,15 @@
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/>
-		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<link
 			rel="stylesheet"
-			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 		/>
+		<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+		<!-- <link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/> -->
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="./assets/style/all.css" />
 	</head>
@@ -126,7 +130,7 @@
 					</div>
 					<div class="col-md-5">
 						<img
-							src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+							src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
 							alt="2020 台味設計展 image "
 						/>
 					</div>
@@ -165,7 +169,7 @@
 					</div>
 					<div class="col-md-5">
 						<img
-							src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
+							src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
 							alt="No.22 線上設計展 image "
 						/>
 					</div>
@@ -213,7 +217,7 @@
 					</div>
 					<div class="col-md-5">
 						<img
-							src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg"
+							src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg"
 							alt="高雄設計節 image "
 						/>
 					</div>
@@ -249,13 +253,13 @@
 		</h3>
 		<div class="row justify-content-end">
 			<div class="col-md-11">
-				<div class="swiper-container">
+				<div class="swiper">
 					<ul class="swiper-wrapper recommend-list list-unstyled">
 						<li class="swiper-slide">
 							<div class="border-0 card">
 								<a href="#">
 									<img
-										src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
+										src="./assets/images/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg"
 										class="recommend-img card-img-top"
 										alt="recommend event image 1"
 									/>
@@ -270,7 +274,7 @@
 							<div class="border-0 card">
 								<a href="#">
 									<img
-										src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
+										src="./assets/images/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg"
 										class="recommend-img card-img-top"
 										alt="recommend event image 2"
 									/>
@@ -285,7 +289,7 @@
 							<div class="border-0 card">
 								<a href="#">
 									<img
-										src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg"
+										src="./assets/images/museums-victoria.jpg"
 										class="recommend-img card-img-top"
 										alt="recommend event image 3"
 									/>
@@ -297,9 +301,6 @@
 							</div>
 						</li>
 					</ul>
-					<div
-						class="bottom-0 d-none d-md-block swiper-pagination"
-					></div>
 				</div>
 			</div>
 		</div>
@@ -419,7 +420,7 @@
 							<div class="d-flex">
 								<div class="me-4">
 									<img
-										src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
+										src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg"
 										class="offcanvas-cart-img"
 										alt="cart item image 1"
 									/>
@@ -489,7 +490,7 @@
 							<div class="d-flex">
 								<div class="me-4">
 									<img
-										src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
+										src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg"
 										class="offcanvas-cart-img"
 										alt="cart item image 2"
 									/>
@@ -559,7 +560,7 @@
 							<div class="d-flex">
 								<div class="me-4">
 									<img
-										src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg"
+										src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg"
 										class="offcanvas-cart-img"
 										alt="cart item image 3"
 									/>
@@ -632,30 +633,30 @@
 		<script>
 			AOS.init();
 		</script>
-
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<script>
-			const swiper = new Swiper(".swiper-container", {
+			const swiper = new Swiper(".swiper", {
 				loop: true,
+				slidesPerView: 1,
 				spaceBetween: 30,
+				grid: {
+					rows: 1,
+					fill: "row",
+				},
 				autoplay: {
 					delay: 2500,
 					disableOnInteraction: false,
 					pauseOnMouseEnter: true,
 				},
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true,
-				},
+
 				breakpoints: {
-					576: {
-						slidesPerView: 1,
-					},
 					768: {
 						slidesPerView: 2,
 						spaceBetween: 30,
 					},
 					992: {
 						slidesPerView: 3,
+						spaceBetween: 30,
 					},
 				},
 			});
