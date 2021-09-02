@@ -6,17 +6,21 @@
 @import "./helpers/utilities"; // 自定义
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-// base
+// global
 @import "./global/base";
 @import "./global/grid";
+
+// layout
+@import "./layout/layout";
 
 // components
 @import "./components/navbar";
 @import "./components/offcanvas";
-@import "./components/banner";
 @import "./components/btn";
-@import "./components/header";
 @import "./components/timeline";
+
+// typography
+@import "./typography/bg";
 
 // pages
 @import "./pages/index";

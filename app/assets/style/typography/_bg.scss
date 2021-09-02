@@ -1,6 +1,8 @@
-.banner {
-	background-size: cover;
-	background-position: center center;
+.bg {
+	&-base {
+		background-size: cover;
+		background-position: center center;
+	}
 
 	&-replay {
 		background-image: url(../images/people2.png);
@@ -14,14 +16,6 @@
 	&-art {
 		height: 480px;
 		background-image: url(../images/ricardo-angel-1.jpg);
-
-		&-content {
-			margin-left: 95px;
-
-			@include mobile() {
-				margin-left: 0;
-			}
-		}
 	}
 
 	&-info-celebration {

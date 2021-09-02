@@ -11,14 +11,8 @@
 
 	&-art {
 		@include mobile() {
-			padding-left: 51px;
-			padding-right: 51px;
-		}
-
-		&:first-child {
-			@include mobile() {
-				margin-right: 15px;
-			}
+			padding-left: 48px;
+			padding-right: 48px;
 		}
 	}
 
