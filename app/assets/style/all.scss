@@ -19,12 +19,12 @@
 @import "./components/btn";
 @import "./components/timeline";
 
-// typography
-@import "./typography/bg";
-
 // pages
 @import "./pages/index";
 @import "./pages/info";
 @import "./pages/design";
 @import "./pages/recommend";
 @import "./pages/checkout";
+
+// helpers
+@import "./helpers/bg";
