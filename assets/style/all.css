@@ -18138,29 +18138,6 @@ img {
   background: #E31277;
 }
 
-.bg-base {
-  background-size: cover;
-  background-position: center center;
-}
-
-.bg-replay {
-  background-image: url(../images/people2.png);
-}
-
-.bg-subscribe {
-  height: 400px;
-  background-image: url(../images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
-}
-
-.bg-art {
-  height: 480px;
-  background-image: url(../images/ricardo-angel-1.jpg);
-}
-
-.bg-info-celebration {
-  height: 400px;
-}
-
 .index-popular-card-title {
   margin-right: 10px;
 }
@@ -18250,6 +18227,29 @@ img {
 .checkout-success-icon {
   font-size: 44px;
   margin-bottom: 10px;
+}
+
+.bg-base {
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-replay {
+  background-image: url(../images/people2.png);
+}
+
+.bg-subscribe {
+  height: 400px;
+  background-image: url(../images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
+}
+
+.bg-art {
+  height: 480px;
+  background-image: url(../images/ricardo-angel-1.jpg);
+}
+
+.bg-info-celebration {
+  height: 400px;
 }
 
 /*# sourceMappingURL=all.css.map */
